@@ -12,6 +12,9 @@ The original source code of the provided example is [here](https://github.com/ke
 * Test configuration using Jest + Enzyme
 * Parcel bundler -- 1.7.1
 
+## about assets
+It must place src folder and dist folder. It considers copy program.
+
 ## Install
 
 ```
