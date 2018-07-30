@@ -6,11 +6,12 @@ The original source code of the provided example is [here](https://github.com/ke
 
 ## Built in settings
 
-* React + ReactDOM (16.3.2)
+* React + ReactDOM (16.4.1)
 * Typescript (with TSLint setting)
 * Prettier + tslint-config-prettier
 * Test configuration using Jest + Enzyme
-* Parcel bundler -- 1.7.1
+* Parcel bundler -- 1.9.7
+* Redux (4.0.0) + React Router (4.3.1)
 
 ## Assets
 All assets fold put "assets" folder. Import "bundle/bundle.js", as somename to use. Program will copy it automatically.
