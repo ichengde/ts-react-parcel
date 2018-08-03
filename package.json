@@ -12,7 +12,8 @@
     "develop": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --public-url '/'",
     "test": "jest",
-    "test:watch": "jest --watch"
+    "test:watch": "jest --watch",
+    "lint": "tslint -c tslint.json 'src/**/*.{ts,tsx}'"
   },
   "jest": {
     "setupFiles": [
@@ -30,6 +31,9 @@
     "testMatch": [
       "**/__tests__/*.(test|spec).(ts|tsx|js)"
     ]
+  },
+  "hooks": {
+    "pre-commit": "npm run lint"
   },
   "keywords": [
     "Typescript",
@@ -49,6 +53,7 @@
     "@types/react-dom": "^16.0.5",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
+    "husky": "^1.0.0-rc.13",
     "jest": "^22.4.3",
     "parcel-bundler": "^1.7.1",
     "parcel-plugin-typescript": "^0.7.0",
